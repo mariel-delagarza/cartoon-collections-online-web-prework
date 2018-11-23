@@ -19,6 +19,7 @@ end
 def find_the_cheese(list)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  list.any? do |word|
-    if word == cheddar or gouda or camembert 
+  list.find do |word|
+    word.cheese_types?
+  end 
 end
